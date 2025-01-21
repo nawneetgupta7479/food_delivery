@@ -1,0 +1,52 @@
+.explore-menu-list {
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    display: flex;
+    gap: 8px;  /* Adjust as needed */
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome */
+}
+
+.menu-item img {
+    max-width: 100px;  /* Adjust size as needed */
+    max-height: 100px;  /* Adjust size as needed */
+    width: 100%;
+    height: auto;
+    object-fit: cover;  /* Ensures the image covers the box while maintaining aspect ratio */
+    border-radius: 50%;  /* If you want circular images */
+}
+
+.menu-item {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.explore-menu hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+
+.menu-item .active {
+    border:3px solid #ff3700;
+    padding: 2px;
+    
+}
+
+@media (max-width: 768px) {
+    .menu-item img {
+        max-width: 80px;  /* Smaller size for smaller screens */
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-item img {
+        max-width: 60px;  /* Even smaller size for very small screens */
+        max-height: 60px;
+    }
+}

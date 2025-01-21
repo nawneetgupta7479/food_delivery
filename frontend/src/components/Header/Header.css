@@ -1,0 +1,22 @@
+.header{
+    
+    margin: 30px auto;
+    height: 34vw;
+    background: url("/header_img.png")  no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.view-menu-btn{
+    background-color:white;
+    color: #49557e;
+    transition: all 0.3s;
+}
+.view-menu-btn:hover{
+    background-color:rgb(243, 238, 238) ;
+}
+
+.header-contents{
+    animation:fadeIn 3s;
+}
+
+
